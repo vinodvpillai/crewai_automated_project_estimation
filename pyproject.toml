@@ -1,0 +1,20 @@
+[project]
+name = "crewai_automated_project_estimation"
+version = "0.1.0"
+description = "crewai_automated_project_estimation using crewAI"
+authors = [{ name = "Vinod Pillai", email = "vinodthebest@gmail.com" }]
+requires-python = ">=3.10,<=3.13"
+dependencies = [
+    "crewai[tools]>=0.79.4,<1.0.0"
+]
+
+[project.scripts]
+crewai_automated_project_estimation = "crewai_automated_project_estimation.main:run"
+run_crew = "crewai_automated_project_estimation.main:run"
+train = "crewai_automated_project_estimation.main:train"
+replay = "crewai_automated_project_estimation.main:replay"
+test = "crewai_automated_project_estimation.main:test"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
